@@ -1,22 +1,56 @@
 
+
+.header{
+    display: flex;
+    justify-content:space-between;/*para mandar un div a la izq, otro al centro y otro a la derecha*/
+    height: 120px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.navbar__center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 1px;
+    
+}
+.navbar__center__items{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: rgb(177, 177, 177);
+}
+
+
 .productos{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     gap: 2%;
-    
- 
+    row-gap: 50px;
+    margin: 0 auto;
+
     
 }
 
+
 .producto{ 
     max-width: 300px;
-    height: auto;    
+    height: auto;  
+    
 }
 
 .producto__image{
     object-fit: 90%;
     max-width: 300px;
-    object-position: center;
+    border-radius: 25px;
+    
    
 }
 
@@ -36,37 +70,42 @@
 }
 
 .navbar{
-    display: inline-block;
-    list-style: none;
     display: flex;
-    gap: 10px;
+    list-style: none;
     margin-left: 10px;
+    gap: 10px;
+
 }
 
+.submenu{
+    z-index: 1;
+    margin-left: 10px;
+    position: absolute;
+
+}
 .navbar li{
     color: rgb(47, 47, 47);
-
     font-weight: 800;
     font-size: small;
 }
 
 
-.header{
-    display: flex;
-    justify-content:space-between;
-    margin-bottom: 100px;
-    font-family: Arial, Helvetica, sans-serif;
+
+
+
+.searcher{
+    
+    border: 0;
     border-bottom: 1px solid black;
 }
 
-.mitienda__contenedor{
-    font-weight:550;
-    font-size: 40px;
-    color: rgb(55, 55, 55);
+.navbar__right--perfil{
+    width: 20px;
+
 }
 
-.searcher{
-    border: 0;
+.navbar__right--cesta{
+    width: 30px;
 }
 
 
@@ -115,8 +154,11 @@ ul{
 }
 
 ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
     font-weight: lighter;
-    color: grey;
+    color: rgb(80, 80, 80);
+
     
 }
 
